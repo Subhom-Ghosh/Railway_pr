@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Railway Fittings QR Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    <h1>QR Code Generator for Track Fittings</h1>
+    
+    <form id="qrForm">
+      <input type="text" id="qr_id" placeholder="Enter QR ID" required>
+      <input type="text" id="type" placeholder="Enter Type (e.g. Elastic Rail Clip)" required>
+<select id="vendor" required>
+  <option value="">-- Select Vendor --</option>
+  <option value="Patil Group">Patil Group</option>
+  <option value="Utkarsh India">Utkarsh India</option>
+  <option value="Raybon Metals Pvt. Ltd.">Raybon Metals Pvt. Ltd.</option>
+  <option value="Rahee Industries Ltd.">Rahee Industries Ltd.</option>
+  <option value="Chandra Industrial Works">Chandra Industrial Works</option>
+  <option value="Jekay International Track Pvt. Ltd.">Jekay International Track Pvt. Ltd.</option>
+  <option value="Precision Drawell Pvt. Ltd.">Precision Drawell Pvt. Ltd.</option>
+  <option value="Nirmal Wires (P) Ltd.">Nirmal Wires (P) Ltd.</option>
+  <option value="Other">Other</option>
+</select>
+      <input type="text" id="batch" placeholder="Enter Batch No" required>
+      <input type="date" id="supply_date" required>
+      <input type="text" id="warranty" placeholder="Enter Warranty (e.g. 5 Years)" required>
+      <button type="submit">Generate QR Code</button>
+    </form>
+
+    <div id="qrcode"></div>
+    <div id="button">Print QR</div>
+  </div>
+
+  <script src="qrcode.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

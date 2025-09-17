@@ -44,7 +44,7 @@ form button:hover {
 #qrcode {
   margin-top: 20px;
 }
-#button{
+#print-btn{
     margin-top: 15px;
     background: #0078d7;
     color: white;
@@ -53,7 +53,7 @@ form button:hover {
     border-radius: 8px;
     cursor: pointer;
 }
-#button:hover {
+#print-btn:hover {
   background: #1f7a33;
 }
 form select {
